@@ -1,0 +1,128 @@
+:root {
+    --Bright-orange: hsl(31, 77%, 52%);
+    --Dark-cyan: hsl(184, 100%, 22%);
+    --Very-dark-cyan: hsl(179, 100%, 13%);
+    --paragraphs: hsla(0, 0%, 100%, 0.75);
+    --background-headings-buttons: hsl(0, 0%, 95%);
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-size: 15px;
+}
+
+.attribution {
+    font-size: 11px;
+    text-align: center;
+}
+
+.attribution a {
+    color: hsl(228, 45%, 44%);
+}
+
+.container {
+    margin: 2rem;
+    display: flex;
+    width: 880px;
+    margin: 10rem auto 2rem;
+}
+
+.container img {
+    margin-bottom: 2rem;
+}
+
+.container h1 {
+    margin-bottom: 2rem;
+    color: white;
+    font-family: 'Big Shoulders Display', cursive;
+}
+
+.container p {
+    margin-bottom: 4rem;
+    font-family: 'Lexend Deca', sans-serif;
+    color: var(--paragraphs);
+    font-weight: 400;
+    line-height: 1.5rem;
+}
+
+.container .colums button {
+    background-color: var(--background-headings-buttons);
+    padding: 0.7rem 1.5rem;
+    border: none;
+    border-radius: 20px;
+    font-weight: 700;
+    font-family: 'Lexend Deca', sans-serif;
+    border: 2px solid white;
+}
+
+.container .colums button:hover {
+    color: var(--paragraphs);
+    cursor: pointer;
+}
+
+.container .one button:hover {
+    background-color: var(--Bright-orange);
+}
+
+.container .two button:hover {
+    background-color: var(--Dark-cyan);
+}
+
+.container .three button:hover {
+    background-color: var(--Very-dark-cyan);
+}
+
+.container .colums {
+    padding: 3rem;
+    text-align: left;
+}
+
+.container .one {
+    background-color: var(--Bright-orange);
+    border-radius: 10px 0px 0px 10px;
+}
+
+.container .one button {
+    color: var(--Bright-orange);
+}
+
+.container .two button {
+    color: var(--Dark-cyan);
+}
+
+.container .three button {
+    color: var(--Very-dark-cyan);
+}
+
+.container .two {
+    background-color: var(--Dark-cyan);
+}
+
+.container .three {
+    background-color: var(--Very-dark-cyan);
+    border-radius: 0px 10px 10px 0px;
+}
+
+@media(max-width: 900px) {
+    .container {
+        display: flex;
+        flex-direction: column;
+        margin: 1rem auto 2rem;
+        width: 300px;
+        align-items: center;
+    }
+    .container .one {
+        border-radius: 10px 10px 0px 0px;
+    }
+    .container .three {
+        border-radius: 0px 0px 10px 10px;
+    }
+    .attribution {
+        margin-bottom: 2rem;
+    }
+}
